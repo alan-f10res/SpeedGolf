@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "631555943162",
+    "firebase_url": "https://speedscore-track.firebaseio.com",
+    "project_id": "speedscore-track",
+    "storage_bucket": "speedscore-track.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631555943162:android:025b97531aeb76bb",
+        "android_client_info": {
+          "package_name": "com.speedscoretrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631555943162-b438bngfn50b0j334bv5v9fubuusg0h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRAnrHg1BY1C--RFXUzxUpXas6mZaM9hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631555943162-b438bngfn50b0j334bv5v9fubuusg0h4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "631555943162-i4t47qjid6np7dh3ic8ov8flh0cchqu8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.SpeedScoreTrack"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

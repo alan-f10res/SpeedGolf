@@ -1,0 +1,48 @@
+{
+  "name": "SpeedScoreTrack",
+  "version": "1.2.26",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "formik": "^1.4.1",
+    "moment": "^2.23.0",
+    "react": "16.8.3",
+    "react-native": "0.59.9",
+    "react-native-autocomplete-input": "^3.6.0",
+    "react-native-elements": "^0.19.1",
+    "react-native-firebase": "^5.2.3",
+    "react-native-google-signin": "^2.0.0",
+    "react-native-image-picker": "^0.28.0",
+    "react-native-keyboard-aware-scroll-view": "^0.8.0",
+    "react-native-map-link": "^2.1.4",
+    "react-native-picker": "^4.3.7",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-sectioned-multi-select": "^0.6.3",
+    "react-native-star-rating": "^1.1.0",
+    "react-native-table-component": "^1.2.0",
+    "react-native-vector-icons": "^6.1.0",
+    "react-native-video": "4.4.4",
+    "react-redux": "^6.0.0",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^4.8.2",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "yup": "^0.26.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "prettier": "^1.15.3",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

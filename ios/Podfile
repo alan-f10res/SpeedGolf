@@ -1,0 +1,39 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SpeedScoreTrack' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+pod 'React', :path => '../node_modules/react-native'
+pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  # Pods for SpeedScoreTrack
+  pod 'Firebase/Core', '~> 5.20.1'
+  pod 'Firebase/Auth', '~> 5.20.1'
+  pod 'Firebase/Firestore', '~> 5.20.1'
+  pod 'Firebase/Storage', '~> 5.20.1'
+  pod 'GoogleSignIn', '~> 4.4.0'
+  pod 'Crashlytics', '~> 3.13.2'
+
+  pod 'react-native-video', :path => '../node_modules/react-native-video'
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+
+      # The following is needed to ensure the "archive" step works in XCode.
+      # It removes React & Yoga from the Pods project, as it is already included in the main project.
+      # Without this, you'd see errors when you archive like:
+      # "Multiple commands produce ... libReact.a"
+      # "Multiple commands produce ... libyoga.a"
+
+      targets_to_ignore = %w(React yoga)
+      
+      if targets_to_ignore.include? target.name
+        target.remove_from_project
+      end
+
+    end
+  end
